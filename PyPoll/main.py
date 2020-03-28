@@ -25,3 +25,8 @@ print(result)
 
 print("Total Votes: ", votes - 1)
 print("Khan Votes: ", khanvotes)
+
+with open("output.txt", "w") as text_file:
+    print(f"Total Votes:", (votes - 1),
+    "Khan Votes: ", (khanvotes),
+    file=text_file)
